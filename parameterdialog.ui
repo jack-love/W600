@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ParameterDialog</class>
+ <widget class="QTabWidget" name="ParameterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="tab_2">
+   <attribute name="title">
+    <string>样本类型</string>
+   </attribute>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QFormLayout" name="formLayout_3">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+       </property>
+       <property name="labelAlignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);
+font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>样本类型编号</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="edt_SampleTypeNo"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>样本类型名称</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="edt_SampleTypeName"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>简码</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="edt_Flag_2"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="btn_SampleTypeSave">
+         <property name="font">
+          <font>
+           <family>WenQuanYi Zen Hei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>保存</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rc.qrc">
+           <normaloff>:/image/Save.png</normaloff>:/image/Save.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tbView_SampleType">
+       <property name="styleSheet">
+        <string notr="true">alternate-background-color: rgb(255, 170, 0);
+color: rgb(0, 0, 255);
+font: 63 11pt &quot;Ubuntu&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="tab">
+   <attribute name="title">
+    <string>项目设置</string>
+   </attribute>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+       </property>
+       <property name="labelAlignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>项目编号</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="edt_ItemNo"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>项目名称</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="edt_ItemName"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>简码</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="edt_Flag"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="btn_ItemSave">
+         <property name="font">
+          <font>
+           <family>WenQuanYi Zen Hei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>保存</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rc.qrc">
+           <normaloff>:/image/Save.png</normaloff>:/image/Save.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tbView_Parameter">
+       <property name="styleSheet">
+        <string notr="true">alternate-background-color: rgb(255, 170, 0);
+color: rgb(0, 0, 255);
+font: 63 11pt &quot;Ubuntu&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="tab">
+   <attribute name="title">
+    <string>项目参数</string>
+   </attribute>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+       </property>
+       <property name="labelAlignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>项目名称</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>项目性质</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="edt_Property"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="edt_RefMin"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>参考最小值</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="edt_RefMax"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="cbb_ItemName"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>参考最大值</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="edt_Unit"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>单位</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="edt_CheckWay"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>检测方法</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="edtPostSequance"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 85, 255);font: 11pt &quot;Vemana2000&quot;;</string>
+         </property>
+         <property name="text">
+          <string>序号</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QPushButton" name="btn_ItemSave_2">
+         <property name="font">
+          <font>
+           <family>WenQuanYi Zen Hei</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>保存</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rc.qrc">
+           <normaloff>:/image/Save.png</normaloff>:/image/Save.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tbView_ItemResult">
+       <property name="styleSheet">
+        <string notr="true">alternate-background-color: rgb(255, 170, 0);
+color: rgb(0, 0, 255);
+font: 63 11pt &quot;Ubuntu&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
