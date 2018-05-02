@@ -35,4 +35,5 @@ moc_*
 qrc_rc.cpp
 ui_*
 autoUrineAnalysis.db
-
+Makefile
+AutoUrine.pro.*
